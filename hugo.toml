@@ -1,6 +1,6 @@
-baseURL = 'https://lsresource.pages.dev/'
+baseURL = 'https://mp.linnav.com/'
 languageCode = 'zh-CN'
-title = '林书资源导航'
+title = '林书自媒体工具导航'
 theme = 'navside'
 publishDir = 'public'
 
@@ -16,14 +16,14 @@ enableGitInfo         = true
     submit        = ""                                   # 左侧导航栏的"网站提交"
     about         = "/about"     # 左侧导航栏的"关于导航"页面(./about)    
     enablePreLoad = true		    		             # 网站完全打开前预加载动画
-    textPreLoad   = "林书资源导航" 		                # 预加载的动画文字, 只有当enablePreLoad=true时生效    
+    textPreLoad   = "林书自媒体工具导航" 		                # 预加载的动画文字, 只有当enablePreLoad=true时生效    
     expandSidebar = true                                 # 默认展开左侧边导航栏
     displayMode   = 0                                    # 显示模式，0.日间模式，1.深色(夜间)模式。2.实时模式，３.日间模式，４.夜间模式
     cardMode      = true 
 
 [params.seo]
-    keywords      = "AI工具导航,资源网站导航,中文互联网资源导航"
-    description   = "林书资源导航 - 收录优质AI自媒体、AI工具、AI提示词、AI平台等资源"
+    keywords      = "自媒体工具导航,资源网站导航,中文互联网资源导航"
+    description   = "林书自媒体工具导航 - 收录优质自媒体工具、自媒体平台、数据分析、创作素材等资源"
 
 [params.images]
     favicon           = "favicon.ico"
@@ -39,7 +39,7 @@ enableGitInfo         = true
     a51lack = "" #
 
 [params.footer]
-    copyright = '© 2025, 林书资源导航'
+    copyright = '© 2025, 林书自媒体工具导航'
 
 [markup.goldmark.renderer]
     unsafe = true # 忽略告警
