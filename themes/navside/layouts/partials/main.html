@@ -1,0 +1,12 @@
+{{/*  主体内容  */}}
+<div id="content" class="content-site customize-site">
+	{{ if $.Site.Data.navsites }}
+	{{/*  卡片模式  */}}
+		{{ if $.Site.Params.cardMode }}
+			{{ partialCached "main/card.html" $ }}
+		{{ else }}
+			{{ partialCached "main/content.html" $ }}
+		{{ end }}
+	{{ end }} 
+	{{ partialCached "friends.html" . }}
+</div>

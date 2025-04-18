@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body >
+
+  {{ block "main" . }}{{ end }}
+
+  {{- /* 页脚 */ -}}
+  {{ partial "footer.html" . }}
+  {{- /* 底部 */ -}}
+  {{ partial "foot.html" . }}
+</body>
+</html>

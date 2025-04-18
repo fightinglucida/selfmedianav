@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+{{ with site.Params.seo.keywords }}
+<meta name="keywords" content="{{ . }}">
+{{ end }}
+{{ with site.Params.seo.description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+<meta name="author" content="{{ or site.Params.Author `Jetsung Chan`}}">
+    

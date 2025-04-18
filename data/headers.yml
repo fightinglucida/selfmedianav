@@ -1,0 +1,32 @@
+- item: AI工具导航
+  icon: fas fa-home
+  link: "https://linnav.com/"
+  target: _blank
+
+- item: 自媒体导航
+  icon: fas fa-medal
+  link: "https://linnav.com/"
+  target: _blank
+
+- item: 影音游戏导航
+  icon: fas fa-film
+  link: "https://linnav.com/"
+  target: _blank
+
+- item: 知识付费导航
+  icon: fas fa-graduation-cap
+  link: "https://linnav.com/"
+  target: _blank
+
+- item: 公众号助手
+  icon: fab fa-weixin
+  list:
+    - name: 公众号导航
+      url: "https://weixinwriter.com/"
+      target: new
+    - name: MD编辑器
+      url: "https://md.weixinwriter.com/"
+      target: new
+    - name: 公众号采集
+      url: "https://weixinwriter.com/download"
+      target: new
