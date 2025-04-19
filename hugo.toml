@@ -1,4 +1,4 @@
-baseURL = 'https://selfmedianav.pages.dev/'
+baseURL = 'https://mp.linnav.com/'
 languageCode = 'zh-CN'
 title = '林书自媒体工具导航'
 theme = 'navside'
