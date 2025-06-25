@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on 林书自媒体工具导航</title>
+    <link>http://localhost:1313/article/</link>
+    <description>Recent content in Articles on 林书自媒体工具导航</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Jun 2025 13:05:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coverview - 封面制作好帮手</title>
+      <link>http://localhost:1313/article/coverview/</link>
+      <pubDate>Wed, 25 Jun 2025 13:05:48 +0800</pubDate>
+      <guid>http://localhost:1313/article/coverview/</guid>
+      <description>&lt;h2 id=&#34;网站介绍&#34;&gt;网站介绍&lt;/h2&gt;&#xA;&lt;p&gt;Coverview 是一款专注于封面设计的在线工具，为博客作者、内容创作者和社交媒体用户提供简单而强大的封面图片制作功能。通过直观的界面和丰富的模板，用户可以在几分钟内创建出专业级别的封面图片，无需复杂的设计软件和专业技能。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>爱开发 - 开发者技术资讯网站</title>
+      <link>http://localhost:1313/article/idev/</link>
+      <pubDate>Wed, 25 Jun 2025 13:05:48 +0800</pubDate>
+      <guid>http://localhost:1313/article/idev/</guid>
+      <description>&lt;h2 id=&#34;网站介绍&#34;&gt;网站介绍&lt;/h2&gt;&#xA;&lt;p&gt;爱开发(idev.top)是一个面向开发者的综合性技术资讯平台，致力于为广大程序员和技术爱好者提供最新、最实用的开发资讯、技术教程和工具推荐。网站内容涵盖前端、后端、移动开发、人工智能、云计算等多个技术领域，是开发者获取技术动态和提升技能的理想平台。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

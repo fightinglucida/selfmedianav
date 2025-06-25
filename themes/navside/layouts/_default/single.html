@@ -1,27 +1,79 @@
 {{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
 
 {{- define "main" -}}
-<div class="page-container">
-    <div class="main-content article flex-fill not">
-        {{- /* 导航栏 */ -}}
-        {{ partial "navbar.html" . }}
+    {{- /* 加载页 */ -}}
+    {{ partial "loading.html" . }}
 
-        {{- /* 内容 */ -}}
-        {{- $params := .Scratch.Get "params" -}}
-        <div class="page single special">
-            {{- /* Title */ -}}
-            <h1 class="single-title animate__animated animate__pulse animate__faster">
-                {{- .Title -}}
-            </h1>
+    <div class="page-container">
+    {{- /* 侧边栏 */ -}}
+    {{ partial "sidebar.html" . }}
 
-            {{- /* Subtitle */ -}}
-            {{- with $params.subtitle -}}
-                <h2 class="single-subtitle">{{ . }}</h2>
-            {{- end -}}
+        <div class="main-content article flex-fill not">
+            {{- /* 导航栏 */ -}}
+            {{ partial "navbar.html" . }}
 
-            {{ .Content }}
+            {{- /* 内容 */ -}}
+            {{- $params := .Scratch.Get "params" -}}
+            <div class="page single special article-container">
+                <div class="article-header">
+                    {{- /* Title */ -}}
+                    <h1 class="single-title animate__animated animate__fadeIn">
+                        {{- .Title -}}
+                    </h1>
+
+                    {{- /* Subtitle */ -}}
+                    {{- with $params.subtitle -}}
+                        <h2 class="single-subtitle">{{ . }}</h2>
+                    {{- end -}}
+                    
+                    <div class="post-meta">
+                        <div class="post-meta-line">
+                            <div class="meta-item meta-date">
+                                <i class="far fa-calendar-alt fa-fw"></i>
+                                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                            </div>
+                            
+                            {{- with .Params.author -}}
+                            <div class="meta-item meta-author">
+                                <i class="fas fa-user fa-fw"></i>
+                                <span>{{ . }}</span>
+                            </div>
+                            {{- end -}}
+                            
+                            {{- with .Params.categories -}}
+                            <div class="meta-item meta-categories">
+                                <i class="fas fa-folder-open fa-fw"></i>
+                                {{- range . }}
+                                <span class="post-category">{{ . }}</span>
+                                {{- end -}}
+                            </div>
+                            {{- end -}}
+                            
+                            {{- with .Params.tags -}}
+                            <div class="meta-item meta-tags">
+                                <i class="fas fa-tags fa-fw"></i>
+                                {{- range . }}
+                                <span class="post-tag">{{ . }}</span>
+                                {{- end -}}
+                            </div>
+                            {{- end -}}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="article-content">
+                    {{ .Content }}
+                </div>
+                
+                {{- if .Params.keywords -}}
+                <div class="article-keywords">
+                    <span class="keywords-title">关键词：</span>
+                    {{- range .Params.keywords -}}
+                        <span class="keyword">{{ . }}</span>
+                    {{- end -}}
+                </div>
+                {{- end -}}
+            </div>
         </div>
-
     </div>
-</div>
 {{- end -}}

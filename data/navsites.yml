@@ -8,12 +8,14 @@
           logo: idev.png
           favicon:
           url: https://www.idev.top/
+          post_url: /article/idev/
           description: 开发者技术资讯网站
           qrcode:
         - title: 爱开发社区
           logo: idev.png
           favicon:
           url: https://forum.idev.top/
+          post_url: /article/coverview/
           description: 开发者技术交流社区
           qrcode:    
 

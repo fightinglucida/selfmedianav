@@ -10,12 +10,12 @@
             rel="noopener noreferrer"
             title="<img src='{{ .ctx.qrcode }}' width='128'>">
         {{ else }}	
-        <a href="{{ .ctx.url }}" 
+        <a href="{{ if .ctx.post_url }}{{ .ctx.post_url }}{{ else }}{{ .ctx.url }}{{ end }}" 
             target="_blank" 
             alt="{{ .ctx.title }}" 
             title="{{ .ctx.description }}"
             class="card no-c mb-4" 
-            data-url="{{ .ctx.url }}" 
+            data-url="{{ if .ctx.post_url }}{{ .ctx.post_url }}{{ else }}{{ .ctx.url }}{{ end }}" 
             data-placement="bottom" 
             data-toggle="tooltip"
             rel="noopener noreferrer">
@@ -57,6 +57,7 @@
             data-toggle="tooltip" 
             data-placement="right" 
             title="直达" 
-            rel="nofollow"><i class="far fa-arrow-alt-circle-right"></i></a>                                
+            rel="nofollow"><i class="far fa-arrow-alt-circle-right"></i></a>
+        {{/* 已移除详情按钮 */}}                                 
     </div>
 </div>

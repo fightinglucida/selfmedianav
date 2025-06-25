@@ -8,7 +8,7 @@
                 {{ $hash_str := printf "%v-main-%v" $index .taxonomy | md5 }}
 
                 <li class="sidebar-item">
-                    <a href="#category-{{ $hash_str }}" class="smooth">
+                    <a href="{{ .Site.BaseURL | absURL }}#category-{{ $hash_str }}" class="smooth">
                         {{ with .icon }}
                             <i class="{{ . }} icon-fw icon-lg mr-2"></i>
                         {{ end }}
@@ -24,7 +24,7 @@
                         {{ range $idx, $_ := . }}
                         {{ $hash_str_sub := printf "%v-%v-child-%v" $index $idx .term | md5 }}
                         <li>
-                            <a href="#category-{{ $hash_str_sub }}" class="smooth">
+                            <a href="{{ $.Site.BaseURL | absURL }}#category-{{ $hash_str_sub }}" class="smooth">
                                 {{ with .icon }}
                                     <i class="{{ . }} icon-fw icon-lg mr-2"></i>
                                 {{ end }}

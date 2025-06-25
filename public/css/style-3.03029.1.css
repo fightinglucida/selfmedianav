@@ -966,7 +966,9 @@ a>i.sidebar-more {
 }
 
 .url-card .mini a.togo,
-.url-card .default a.togo {
+.url-card .default a.togo,
+.url-card .mini a.togo-article,
+.url-card .default a.togo-article {
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -976,16 +978,33 @@ a>i.sidebar-more {
 	opacity: .2;
 	transition: opacity .3s
 }
-
 .url-card .mini a.togo {
 	top: 4px
 }
 
-.url-card .url-body:hover a.togo {
+.url-card .mini a.togo-article,
+.url-card .default a.togo-article {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	opacity: .2;
+	transition: opacity .3s
+}
+
+.url-card .mini a.togo-article {
+	top: 4px
+}
+
+.url-card .url-body:hover a.togo,
+.url-card .url-body:hover a.togo-article {
 	opacity: 1
 }
 
-.url-card .max a.togo {
+.url-card .max a.togo,
+.url-card .max a.togo-article {
 	margin-left: auto
 }
 
@@ -1021,7 +1040,8 @@ a>i.sidebar-more {
 	transform: scale(3) translateY(-25px) !important
 }
 
-.url-card a.togo:hover i {
+.url-card a.togo:hover i,
+.url-card a.togo-article:hover i {
 	text-shadow: 0 0 5px
 }
 
